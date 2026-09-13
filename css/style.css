@@ -6,16 +6,25 @@ h1 {
 
 body div {
     text-align: center;
+}
+
+ul {
     list_style_type: none;
 }
 
-body {
+html, body {
   height: 100%;
-  margin: 0;
 }
 
-footer {
-    color: goldenrod;
-    background-color: black;
-    padding: 25px;
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
