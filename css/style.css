@@ -2,6 +2,7 @@ h1 {
     color: goldenrod;
     background-color: black;
     font-style: italic;
+    list_style_type: none;
 }
 
 body div {
