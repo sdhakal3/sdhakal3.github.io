@@ -2,9 +2,20 @@ h1 {
     color: goldenrod;
     background-color: black;
     font-style: italic;
-    list_style_type: none;
 }
 
 body div {
     text-align: center;
+    list_style_type: none;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+    color: goldenrod;
+    background-color: black;
+    padding: 25px;
 }
