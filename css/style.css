@@ -9,7 +9,7 @@ body div {
 }
 
 ul {
-    list_style_type: none;
+    list-style-type: none;
 }
 
 html, body {
@@ -21,10 +21,10 @@ body {
   flex-direction: column;
 }
 
-.content {
+div {
   flex: 1 0 auto;
 }
 
-.footer {
+footer {
   flex-shrink: 0;
 }
