@@ -488,7 +488,7 @@ footer {
     }
 }
 @media (max-width: 800px) {
-    .img_container {
+    .card > .img_container {
         float: none;
         width: fit-content;
         max-width: 100%;
@@ -497,10 +497,11 @@ footer {
     .img_box {
         float: none;
         width: 100%;
-        margin: 0 auto 16px;
+        margin: 0 0 16px;
     }
     .instrument_img,
-    .seating_img {
+    .seating_img,
+    .range_img{
         max-width: 100%;
         height: auto;
     }
