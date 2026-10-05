@@ -467,7 +467,9 @@ main {
     border-radius: 6px;
     cursor: pointer;
 }
-
+.card li{ 
+    margin-bottom: 12px; 
+}
 .form_button input:hover {
     background: #000;
 }
