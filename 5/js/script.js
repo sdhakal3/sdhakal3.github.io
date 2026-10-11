@@ -31,10 +31,10 @@ function updateText(info){
     setText("heroDesc", info.hero.description);
     setText("sec1Title", info.sections.overview.title);
     setText("sec1Subtitle", info.sections.overview.subtitle);
-    setText("sec1Grid", info.sections.overview.cards);
+    updateCard("sec1Grid", info.sections.overview.cards);
     setText("sec2Title", info.sections.equipment.title);
     setText("sec2Subtitle", info.sections.equipment.subtitle);
-    setText("sec2Grid", info.sections.equipment.cards);
+    updateCard("sec2Grid", info.sections.equipment.cards);
 }
 
 function updateImage(img){
