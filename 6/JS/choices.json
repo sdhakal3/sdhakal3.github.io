@@ -202,7 +202,7 @@
           "clef": {
             "text": "Harp music is written on a grand staff, which joins the treble and bass clefs together, as piano music is. This lets the harpist's two hands cover both high and low notes.",
             "image": {
-              "src": "grand_staff.png",
+              "src": "grand_staff.webp",
               "alt": "The staff notation of a harp (Grand Staff).",
               "caption": "Grand Staff."
             }
