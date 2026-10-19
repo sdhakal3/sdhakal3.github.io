@@ -76,7 +76,7 @@ body {
 
 main {
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)) , url(../img/main_bck.webp);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
