@@ -8,10 +8,10 @@ import {
 import { 
     runWithFeedback, 
     showStatus, 
-    clearStatus } from "./feedback.js";
- 
+    clearStatus 
+} from "./feedback.js";
+
 const MIN_PASSWORD_LENGTH = 8;
- 
 const ELEMENT_IDS = {
     checkingMessage: "authChecking",
     pageNotice: "pageNotice",
@@ -140,11 +140,11 @@ async function handlePasswordSubmit(elements, event){
     const currentPassword = form.elements.currentPassword.value;
     const newPassword = form.elements.newPassword.value;
     const problem = findPasswordProblem(newPassword, form.elements.confirmation.value);
-    if (problem !== null) {
+    if (problem !== null){
         showStatus(elements.passwordStatus, "error", problem);
         return;
     }
-    if (newPassword === currentPassword) {
+    if (newPassword === currentPassword){
         showStatus(elements.passwordStatus, "error", MESSAGES.sameAsCurrent);
         return;
     }
@@ -180,7 +180,6 @@ function addEventListeners(elements){
 function initializeLoginPage(){
     const elements = findElements();
     addEventListeners(elements);
-    showRedirectNotice(elements);
     watchSignInState(user => showViewForUser(elements, user));
 }
 initializeLoginPage();
