@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Sejan Dhakal">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header class="site_header">
+        <h1>The Orchestra</h1>
+        <p>Log in or create an account to explore.</p>
+        <nav class="site_nav" aria-label="Main">
+            <a href="../login_page/index.html" id="authLink" aria-current="page">Login</a>
+            <a href="../index.html">Home</a>
+            <a href="../choices/index.html">Choices</a>
+            <a href="../extra_info/index.html">Extra Info</a>
+            <a href="../contact_page/index.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="login">
+        <div class="auth_panel">
+            <p id="pageNotice" class="page_notice" role="status" hidden></p>
+            <p id="authChecking" class="status_message" role="status"><span class="spinner" aria-hidden="true"></span>Checking your account...</p>
+            <section id="signedOutView" class="login_form" aria-labelledby="authHeading" hidden>
+                <h2 id="authHeading">Log in</h2>
+                <p class="form_intro" id="authIntro">Log in to explore the instruments and send us feedback!</p>
+                <div class="auth_toggle" role="group" aria-label="Choose what you want to do">
+                    <button type="button" id="showLoginButton" aria-pressed="true">Log in</button>
+                    <button type="button" id="showSignupButton" aria-pressed="false">Sign up</button>
+                </div>
+                <form id="loginForm">
+                    <div class="login_box">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="johndoe@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="login_box">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                    </div>
+                    <button type="submit" class="action_button">Log in</button>
+                    <div class="form_status" id="loginStatus"></div>
+                </form>
+                <form id="signupForm" hidden>
+                    <div class="login_box">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="login_box">
+                        <label for="signupPassword">Password (at least 8 characters)</label>
+                        <input type="password" id="signupPassword" name="password" autocomplete="new-password" minlength="6" required>
+                    </div>
+                    <div class="login_box">
+                        <label for="signupConfirmation">Type the password again</label>
+                        <input type="password" id="signupConfirmation" name="confirmation" autocomplete="new-password" required>
+                    </div>
+                    <button type="submit" class="action_button">Create account</button>
+                    <div class="form_status" id="signupStatus"></div>
+                </form>
+            </section>
+            <section id="signedInView" class="login_form" aria-labelledby="accountHeading" hidden>
+                <h2 id="accountHeading">You are logged in!</h2>
+                <p class="form_intro">Signed in as <strong id="accountEmail"></strong></p>
+                <div class="account_actions">
+                    <a class="action_button" href="../choices/index.html">Start exploring instruments</a>
+                    <button type="button" id="logoutButton" class="action_button secondary">Log out</button>
+                </div>
+                <div class="form_status" id="logoutStatus"></div>
+                <hr>
+                <h3>Change your password</h3>
+                <form id="passwordForm">
+                    <div class="login_box">
+                        <label for="currentPassword">Current password</label>
+                        <input type="password" id="currentPassword" name="currentPassword" autocomplete="current-password" required>
+                    </div>
+                    <div class="login_box">
+                        <label for="newPassword">New password (at least 6 characters)</label>
+                        <input type="password" id="newPassword" name="newPassword" autocomplete="new-password" minlength="6" required>
+                    </div>
+                    <div class="login_box">
+                        <label for="newPasswordConfirmation">Type the new password again</label>
+                        <input type="password" id="newPasswordConfirmation" name="confirmation" autocomplete="new-password" required>
+                    </div>
+                    <button type="submit" class="action_button">Change password</button>
+                    <div class="form_status" id="passwordStatus"></div>
+                </form>
+            </section>
+            <noscript><p class="status_message">This page requires JavaScript to log in!</p></noscript>
+        </div>
+    </main>
+    <footer>
+        Copyright Sejan D., 2026
+    </footer>
+    <script type="module" src="../JS/nav.js"></script>
+    <script type="module" src="../JS/login.js"></script>
+</body>
+</html>
